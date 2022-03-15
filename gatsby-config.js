@@ -9,7 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: process.env.DRUPAL_BASE_URL ?? 'https://dev-imagetransformapi.pantheonsite.io'
+        baseUrl: process.env.DRUPAL_BASE_URL ?? 'https://dev-imagetransformapi.pantheonsite.io',
+        skipFileDownloads: true
       }
     },
     `gatsby-plugin-react-helmet`,
